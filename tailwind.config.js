@@ -11,6 +11,9 @@ module.exports = {
       backgroundImage: {
         img1: "url('./src/image/valo1.jpg')",
       },
+      fontSize: {
+        '2xs': '0.55rem',
+      },
     },
   },
   plugins: [],

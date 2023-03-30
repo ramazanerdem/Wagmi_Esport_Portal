@@ -6,7 +6,7 @@ const Search = () => {
     <div className="flex justify-between items-center h-14 bg-gray-900">
       <div></div>
       <input
-        className="h-8 w-64 p-2 rounded-sm text-sm bg-gray-600 outline-none"
+        className="h-8 w-64 p-2 rounded-md text-sm text-white text-opacity-50 bg-white bg-opacity-10 outline-none"
         placeholder="Search..."
         type="text"
       />
