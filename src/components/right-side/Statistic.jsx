@@ -30,13 +30,13 @@ const Statistic = () => {
                 </div>
               </td>
               <td>14.2%</td>
-              <td>53.7%</td>
+              <td className="text-green-600">63.7%</td>
               <td>46.3%</td>
               <td>60,330</td>
               <td></td>
             </tr>
             <tr className="h-9">
-              <td>1</td>
+              <td>2</td>
               <td>
                 <div className="flex items-center gap-2 ms-6">
                   <div className="w-6 h-6 p-0 rounded-md overflow-hidden bg-white">
@@ -50,13 +50,13 @@ const Statistic = () => {
                 </div>
               </td>
               <td>14.2%</td>
-              <td>53.7%</td>
+              <td className="text-green-400">59.7%</td>
               <td>46.3%</td>
               <td>60,330</td>
               <td></td>
             </tr>
             <tr className="bg-wagmi-black h-9">
-              <td>1</td>
+              <td>3</td>
               <td>
                 <div className="flex items-center gap-2 ms-6">
                   <div className="w-6 h-6 p-0 rounded-md overflow-hidden bg-white">
@@ -70,13 +70,13 @@ const Statistic = () => {
                 </div>
               </td>
               <td>14.2%</td>
-              <td>53.7%</td>
+              <td className="text-green-200">55.6%</td>
               <td>46.3%</td>
               <td>60,330</td>
               <td></td>
             </tr>
             <tr className="h-9">
-              <td>1</td>
+              <td>4</td>
               <td>
                 <div className="flex items-center gap-2 ms-6">
                   <div className="w-6 h-6 p-0 rounded-md overflow-hidden bg-white">
@@ -96,7 +96,7 @@ const Statistic = () => {
               <td></td>
             </tr>
             <tr className="bg-wagmi-black h-9">
-              <td>1</td>
+              <td>5</td>
               <td>
                 <div className="flex items-center gap-2 ms-6">
                   <div className="w-6 h-6 p-0 rounded-md overflow-hidden bg-white">
@@ -110,13 +110,13 @@ const Statistic = () => {
                 </div>
               </td>
               <td>14.2%</td>
-              <td>53.7%</td>
+              <td className="text-red-300">49.9%</td>
               <td>46.3%</td>
               <td>60,330</td>
               <td></td>
             </tr>
             <tr className="h-9">
-              <td>1</td>
+              <td>6</td>
               <td>
                 <div className="flex items-center gap-2 ms-6">
                   <div className="w-6 h-6 p-0 rounded-md overflow-hidden bg-white">
@@ -130,7 +130,7 @@ const Statistic = () => {
                 </div>
               </td>
               <td>14.2%</td>
-              <td>53.7%</td>
+              <td className="text-red-500">43.7%</td>
               <td>46.3%</td>
               <td>60,330</td>
               <td></td>
