@@ -12,7 +12,7 @@ import { FiFolder } from 'react-icons/fi'
 
 const Navbar = ({ sideBar, setSideBar }) => {
   return (
-    <div className="py-5 px-4 text-gray-400">
+    <div className="py-5 px-4 text-white text-opacity-50">
       <header
         className={`flex ${
           sideBar && 'flex-col gap-8'
@@ -28,7 +28,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
           className={`${sideBar && ' rotate-180'} text-xl cursor-pointer`}
         />
       </header>
-      {sideBar && <hr className="mt-9 mx-auto border-gray-500" />}
+      {sideBar && <hr className="mb-9 mt-9 mx-auto border-gray-500" />}
       <main className="mt-8 space-y-3 text-sm">
         <div
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 ${

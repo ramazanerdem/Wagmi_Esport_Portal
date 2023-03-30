@@ -13,8 +13,12 @@ function Tournament({}) {
             />
           </div>
           <div className="text-xs flex mt-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-full me-2 flex justify-center items-center">
-              <p className="text-xl font-bold">T</p>
+            <div className="w-10 h-10 bg-blue-600 overflow-hidden rounded-full me-2 flex justify-center items-center">
+              <img
+                className=""
+                src="https://yt3.ggpht.com/ytc/AL5GRJWV_idnq18aEzprcxZ6kYptIAReiriHqshytB_j=s68-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
             </div>
             <div>
               <p className="text-gray-500">TODAY, 20:00</p>
@@ -40,8 +44,12 @@ function Tournament({}) {
             />
           </div>
           <div className="text-xs flex mt-2">
-            <div className="w-10 h-10 bg-yellow-600 rounded-full me-2 flex justify-center items-center">
-              <p className="text-xl font-bold">T</p>
+            <div className="w-10 h-10 bg-blue-600 overflow-hidden rounded-full me-2 flex justify-center items-center">
+              <img
+                className=""
+                src="https://yt3.ggpht.com/ytc/AL5GRJVuDbHu2Bfj7Fy-7tMBlrlvIiACf5rHY7k6Rw7EGw=s68-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
             </div>
             <div>
               <p className="text-gray-500">TODAY, 20:00</p>
@@ -67,8 +75,12 @@ function Tournament({}) {
             />
           </div>
           <div className="text-xs flex mt-2">
-            <div className="w-10 h-10 bg-green-600 rounded-full me-2 flex justify-center items-center">
-              <p className="text-xl font-bold">T</p>
+            <div className="w-10 h-10 bg-blue-600 overflow-hidden rounded-full me-2 flex justify-center items-center">
+              <img
+                className=""
+                src="https://yt3.ggpht.com/ytc/AL5GRJXPBiJlkAblXOFQhmtpMIerg_yk3M1LBLQ1I0PvYw=s68-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
             </div>
             <div>
               <p className="text-gray-500">TODAY, 20:00</p>
@@ -94,8 +106,12 @@ function Tournament({}) {
             />
           </div>
           <div className="text-xs flex mt-2">
-            <div className="w-10 h-10 bg-gray-600 rounded-full me-2 flex justify-center items-center">
-              <p className="text-xl font-bold">T</p>
+            <div className="w-10 h-10 bg-blue-600 overflow-hidden rounded-full me-2 flex justify-center items-center">
+              <img
+                className=""
+                src="https://yt3.ggpht.com/ytc/AL5GRJXL9Nb9xZAs9MY4pFWtnLQ-KrdYQbr_qGsxCA1xGg=s68-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
             </div>
             <div>
               <p className="text-gray-500">TODAY, 20:00</p>
@@ -121,8 +137,12 @@ function Tournament({}) {
             />
           </div>
           <div className="text-xs flex mt-2">
-            <div className="w-10 h-10 bg-red-600 rounded-full me-2 flex justify-center items-center">
-              <p className="text-xl font-bold">T</p>
+            <div className="w-10 h-10 bg-blue-600 overflow-hidden rounded-full me-2 flex justify-center items-center">
+              <img
+                className=""
+                src="https://yt3.ggpht.com/ytc/AL5GRJXI4vEE841AsaWRweFM43m0PPMbaSx7DGqyowX9=s68-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
             </div>
             <div>
               <p className="text-gray-500">TODAY, 20:00</p>
@@ -148,8 +168,12 @@ function Tournament({}) {
             />
           </div>
           <div className="text-xs flex mt-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-full me-2 flex justify-center items-center">
-              <p className="text-xl font-bold">T</p>
+            <div className="w-10 h-10 bg-blue-600 overflow-hidden rounded-full me-2 flex justify-center items-center">
+              <img
+                className=""
+                src="https://yt3.ggpht.com/ytc/AL5GRJU2ixQ9tEoFIRPVkjsVNPR_x1FnzvGL2xKKdn8Amw=s68-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
             </div>
             <div>
               <p className="text-gray-500">TODAY, 20:00</p>
