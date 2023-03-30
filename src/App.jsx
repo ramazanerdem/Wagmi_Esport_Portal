@@ -10,12 +10,12 @@ function App() {
     <main className="relative flex min-h-screen text-white">
       <section
         className={`${
-          sideBar ? 'w-14 -translate-x-10' : 'w-72'
-        } duration-300  bg-wagmi-darkgray fixed top-0 left-0 z-40 h-screen transition-transform  sm:translate-x-0`}
+          sideBar ? 'sm:w-14 -translate-x-10' : 'sm:w-72'
+        } duration-300 w-0 bg-wagmi-darkgray fixed top-0 left-0 z-40 h-screen transition-transform  sm:translate-x-0`}
       >
         <Navbar sideBar={sideBar} setSideBar={setSideBar} />
       </section>
-      <section className={`overflow-clip ${sideBar ? 'ml-14' : 'ml-72'}`}>
+      <section className={`overflow-clip ${sideBar ? 'sm:ml-14' : 'sm:ml-72'}`}>
         <Search />
         <Home />
       </section>

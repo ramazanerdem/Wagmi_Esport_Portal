@@ -2,8 +2,8 @@ import valo1 from '../../image/valo1.jpg'
 
 const Carousel = () => {
   return (
-    <div className="relative container overflow-hidden flex flex-col justify-between w-full h-96 rounded-xl bg-red-800">
-      <div className="absolute h-full m-0 z-10 flex justify-center items-center">
+    <div className="relative overflow-hidden flex flex-col justify-between w-full h-96 rounded-xl bg-red-800">
+      <div className="absolute h-full w-full z-10 flex justify-center items-center">
         <img className="" src={valo1} alt="" />
       </div>
       <div className="absolute h-96 w-full bg-gradient-to-r from-black to-transparent  z-20"></div>

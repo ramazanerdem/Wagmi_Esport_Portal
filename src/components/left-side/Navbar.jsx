@@ -28,6 +28,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
           className={`${sideBar && ' rotate-180'} text-xl cursor-pointer`}
         />
       </header>
+      {sideBar && <hr className="mt-9 mx-auto border-gray-500" />}
       <main className="mt-8 space-y-3 text-sm">
         <div
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 ${
@@ -70,7 +71,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
           <p className={`${sideBar && 'hidden'}`}>Koçluk Hizmeti</p>
         </div>
       </main>
-      <hr className="mt-9 mx-auto justify-center border-gray-500" />
+      <hr className="mt-9 mx-auto border-gray-500" />
       <article></article>
     </div>
   )
