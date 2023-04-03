@@ -28,8 +28,8 @@ const Navbar = ({ sideBar, setSideBar }) => {
           onClick={() => setSideBar(!sideBar)}
           className={`${
             sideBar
-              ? 'rotate-180 ms-8 sm:ms-0 text-xl absolute sm:static cursor-pointer'
-              : 'ms-36 absolute sm:static text-xl cursor-pointer'
+              ? 'rotate-180 text-xl absolute left-0 ms-3 sm:static cursor-pointer'
+              : 'absolute right-0 me-3 sm:static text-xl cursor-pointer'
           }`}
         />
       </header>
