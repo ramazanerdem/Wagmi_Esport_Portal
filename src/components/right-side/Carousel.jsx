@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import valo1 from '../../image/valo1.jpg'
 
 // images
 const img1 =
@@ -10,6 +9,9 @@ const img2 =
 
 const img3 = 'https://esportbet.com/wp-content/uploads/2022/05/scs.jpg'
 
+const img4 =
+  'https://www.sportsbusinessjournal.com/-/media/Images/TEO/2022/09/VCT-Calendar-MAIN.ashx'
+
 const Carousel = () => {
   const [slider, setSlider] = useState({
     first: false,
@@ -18,20 +20,20 @@ const Carousel = () => {
     fourth: false,
   })
   return (
-    <div className="relative overflow-hidden flex flex-col justify-between w-full h-52 sm:h-156 rounded-xl bg-wagmi-darkgray">
+    <div className="relative overflow-hidden flex flex-col justify-between w-full h-52 sm:h-96 rounded-xl bg-wagmi-darkgray">
       <div className="absolute h-full w-full z-10 flex justify-center items-center">
         <img
-          className="w-full"
+          className="h-fit"
           src={
             slider.first
-              ? valo1
-              : slider.second
               ? img1
-              : slider.third
+              : slider.second
               ? img2
-              : slider.fourth
+              : slider.third
               ? img3
-              : valo1
+              : slider.fourth
+              ? img4
+              : img2
           }
           alt=""
         />
