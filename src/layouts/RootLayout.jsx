@@ -9,7 +9,7 @@ const RootLayout = () => {
   const [sideBar, setSideBar] = useState(true)
 
   return (
-    <main className="relative flex min-h-screen text-white bg-wagmi-darkgray">
+    <main className="relative flex min-h-screen text-white bg-wagmi-black tracking-wide">
       <section
         className={`${
           sideBar
@@ -34,7 +34,7 @@ const RootLayout = () => {
         }`}
       >
         <Search />
-        <Outlet />
+        <Outlet sideBar={sideBar} />
       </section>
     </main>
   )

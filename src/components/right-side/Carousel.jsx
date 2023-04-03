@@ -40,8 +40,9 @@ const Carousel = () => {
       </div>
       <div className="absolute h-156 w-full bg-gradient-to-r from-black to-transparent  z-20"></div>
       <div className="flex flex-col justify-between z-30 p-5 md:p-16">
-        <h2 className="text-md md:text-5xl font-bold w-4/6 leading-snug">
-          Lorem ipsum, dolor sit amet consectetur adipisicing.
+        <h2 className="text-md md:text-4xl font-bold w-4/6 leading-snug">
+          Hyper Front is shutting down – Valorant Mobile clone folds after Riot
+          lawsuit
         </h2>
         <button className="absolute bottom-16 md:bottom-32 bg-wagmi-yellow text-black font-semibold text-md md:text-xl rounded-md h-8 w-20 md:h-12 md:w-32 mt-4">
           Sign In

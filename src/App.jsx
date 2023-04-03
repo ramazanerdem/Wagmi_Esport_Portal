@@ -1,8 +1,11 @@
 import {
+  BrowserRouter,
   Outlet,
   Route,
   RouterProvider,
+  Routes,
   createBrowserRouter,
+  createRoutesFromChildren,
   createRoutesFromElements,
 } from 'react-router-dom'
 import { useState } from 'react'
@@ -19,6 +22,7 @@ import Home from './pages/Home'
 import Comps from './pages/Comps'
 import Login from './pages/Login'
 import GameGuide from './pages/GameGuide'
+import Characters from './pages/Characters'
 import Crosshair from './pages/Crosshair'
 import CoachingServices from './pages/CoachingServices'
 import NotFound from './pages/NotFound'
@@ -30,7 +34,9 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />}>
         <Route path="home" element={<Home />} />
       </Route>
-      <Route path="game-guide" element={<GameGuide />} />
+      <Route path="game-guide" element={<GameGuide />}>
+        <Route path="characters" element={<Characters />} />
+      </Route>
       <Route path="crosshair" element={<Crosshair />} />
       <Route path="comps" element={<Comps />} />
       <Route path="coaching-service" element={<CoachingServices />} />
