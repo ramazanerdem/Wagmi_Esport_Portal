@@ -36,7 +36,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
       {sideBar && <hr className="mb-9 mt-9 mx-auto border-gray-500" />}
       <main className="mt-8 space-y-3 text-sm">
         <NavLink
-          onClick={() => setSideBar(!sideBar)}
+          onClick={() => setSideBar(true)}
           to="/"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 ${
             !sideBar ? 'py-2 px-3' : 'justify-center'
@@ -46,7 +46,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
           <p className={`${sideBar && 'hidden'}`}>Home</p>
         </NavLink>
         <NavLink
-          onClick={() => setSideBar(!sideBar)}
+          onClick={() => setSideBar(true)}
           to="game-guide"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 py-2 ${
             !sideBar ? 'px-3' : 'justify-center'
@@ -56,7 +56,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
           <p className={`${sideBar && 'hidden'}`}>Oyun Rehberi</p>
         </NavLink>
         <NavLink
-          onClick={() => setSideBar(!sideBar)}
+          onClick={() => setSideBar(true)}
           to="crosshair"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 py-2 ${
             !sideBar ? 'px-3' : 'justify-center'
@@ -66,7 +66,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
           <p className={`${sideBar && 'hidden'}`}>Crosshair</p>
         </NavLink>
         <NavLink
-          onClick={() => setSideBar(!sideBar)}
+          onClick={() => setSideBar(true)}
           to="comps"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 py-2 ${
             !sideBar ? 'px-3' : 'justify-center'
@@ -76,7 +76,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
           <p className={`${sideBar && 'hidden'}`}>Comps</p>
         </NavLink>
         <NavLink
-          onClick={() => setSideBar(!sideBar)}
+          onClick={() => setSideBar(true)}
           to="coaching-service"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 py-2 ${
             !sideBar ? 'px-3' : 'justify-center'
