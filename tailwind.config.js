@@ -15,6 +15,10 @@ module.exports = {
       fontSize: {
         '2xs': '0.55rem',
       },
+      spacing: {
+        128: '32rem',
+        156: '40rem',
+      },
     },
   },
   plugins: [],

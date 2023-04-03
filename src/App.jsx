@@ -1,34 +1,46 @@
-// component
-import Navbar from './components/left-side/Navbar'
-import Home from './pages/Home'
-import Search from './components/right-side/Search'
+import {
+  Outlet,
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from 'react-router-dom'
 import { useState } from 'react'
 
-function App() {
-  const [sideBar, setSideBar] = useState(true)
-  return (
-    <main className="relative flex min-h-screen text-white">
-      <section
-        className={`${
-          sideBar
-            ? 'sm:w-14 transition-all duration-300 '
-            : 'sm:w-72 transition-all duration-300'
-        } duration-300 w-0 bg-wagmi-darkgray fixed top-0 left-0 z-40 h-screen sm:translate-x-0`}
-      >
-        <Navbar sideBar={sideBar} setSideBar={setSideBar} />
-      </section>
-      <section
-        className={`overflow-clip ${
-          sideBar
-            ? 'sm:ml-14 transition-all duration-300'
-            : 'sm:ml-72 transition-all duration-300'
-        }`}
-      >
-        <Search />
-        <Home />
-      </section>
-    </main>
+// component
+import Navbar from './components/left-side/Navbar'
+import Search from './components/right-side/Search'
+
+// layout
+import RootLayout from './layouts/RootLayout'
+
+// pages
+import Home from './pages/Home'
+import Comps from './pages/Comps'
+import Login from './pages/Login'
+import GameGuide from './pages/GameGuide'
+import Crosshair from './pages/Crosshair'
+import CoachingServices from './pages/CoachingServices'
+import NotFound from './pages/NotFound'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route path="login" element={<Login />} />
+      <Route path="/" element={<Home />}>
+        <Route path="home" element={<Home />} />
+      </Route>
+      <Route path="game-guide" element={<GameGuide />} />
+      <Route path="crosshair" element={<Crosshair />} />
+      <Route path="comps" element={<Comps />} />
+      <Route path="coaching-service" element={<CoachingServices />} />
+      <Route path="*" element={<NotFound />} />
+    </Route>
   )
+)
+
+function App() {
+  return <RouterProvider router={router} />
 }
 
 export default App

@@ -10,9 +10,9 @@ const Search = () => {
         placeholder="Search..."
         type="text"
       />
-      <div className="flex justify-center items-center me-10 text-xl">
+      <div className="flex justify-center items-center me-5 sm:me-10 text-xl">
         <TbMessageDots className="me-3 cursor-pointer text-white text-opacity-70" />
-        <MdNotificationsNone className="me-7 cursor-pointer text-white text-opacity-70" />
+        <MdNotificationsNone className="me-4 sm:me-7 cursor-pointer text-white text-opacity-70" />
         <div className="w-8 h-8 bg-blue-300 rounded-full cursor-pointer overflow-hidden">
           <img
             src="https://avatars.githubusercontent.com/u/117930648?s=40&v=4"

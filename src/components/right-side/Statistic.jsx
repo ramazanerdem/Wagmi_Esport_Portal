@@ -1,8 +1,8 @@
 const Statistic = () => {
   return (
     <>
-      <div className="mx-4 text-center h-full text-white text-opacity-50">
-        <table className="table-auto w-full h-full">
+      <div className="mx-4 text-center h-full text-white text-opacity-50 overflow-auto mb-3">
+        <table className="table-auto w-96 sm:w-full h-80">
           <thead className="text-2xs h-5">
             <tr className="bg-wagmi-darkgray bg-opacity-90">
               <th className="w-1/12">Rank</th>
