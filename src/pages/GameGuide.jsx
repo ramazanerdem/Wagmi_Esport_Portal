@@ -17,7 +17,7 @@ const GameGuide = () => {
     <section className={`flex justify-center`}>
       <article className={`${!isOpen && 'hidden'}`}>
         <h4 className="mt-14 mb-5 text-2xl font-semibold">Game Guides</h4>
-        <div className="flex flex-col items-center gap-10">
+        <div className="flex flex-col items-center md:items-start gap-10">
           <div className="flex">
             <button className="flex justify-center gap-2 items-center focus:bg-white focus:bg-opacity-20 px-3 py-2 rounded-md">
               <div className="w-5 h-5 bg-red-500 rounded-md flex justify-center items-center text-wagmi-black">
