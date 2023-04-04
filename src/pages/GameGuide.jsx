@@ -13,7 +13,7 @@ import {
 
 const GameGuide = () => {
   return (
-    <article>
+    <section>
       <h4 className="mt-6 mb-5 text-2xl font-semibold">Game Guides</h4>
       <div className="flex flex-col items-center md:items-start gap-10">
         <div className="flex">
@@ -87,7 +87,7 @@ const GameGuide = () => {
           </div>
         </div>
       </div>
-    </article>
+    </section>
   )
 }
 export default GameGuide

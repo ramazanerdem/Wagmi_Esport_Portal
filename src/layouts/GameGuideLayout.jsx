@@ -2,9 +2,9 @@ import { Outlet } from 'react-router-dom'
 
 const GameGuideLayout = () => {
   return (
-    <section className="flex justify-center">
+    <div className="flex justify-center">
       <Outlet />
-    </section>
+    </div>
   )
 }
 export default GameGuideLayout

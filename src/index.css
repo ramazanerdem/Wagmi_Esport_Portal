@@ -1,6 +1,7 @@
 @tailwind base;
 /* Firefox */
 * {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
   scrollbar-width: thin;
