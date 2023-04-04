@@ -1,6 +1,7 @@
+import { NavLink } from 'react-router-dom'
+
 import frame from '../../image/Frame.png'
 import frameLogo from '../../image/Group.png'
-import arrowLeft from '../../image/icon/arrow-left.png'
 
 // icon
 import { FaBeer } from 'react-icons/fa'
@@ -25,51 +26,65 @@ const Navbar = ({ sideBar, setSideBar }) => {
         />
         <HiOutlineArrowLeft
           onClick={() => setSideBar(!sideBar)}
-          className={`${sideBar && ' rotate-180'} text-xl cursor-pointer`}
+          className={`${
+            sideBar
+              ? 'rotate-180 text-xl absolute left-0 ms-4 md:ms-0 sm:static cursor-pointer'
+              : 'absolute right-0 me-3 sm:static text-xl cursor-pointer'
+          }`}
         />
       </header>
       {sideBar && <hr className="mb-9 mt-9 mx-auto border-gray-500" />}
       <main className="mt-8 space-y-3 text-sm">
-        <div
+        <NavLink
+          onClick={() => setSideBar(true)}
+          to="/"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 ${
             !sideBar ? 'py-2 px-3' : 'justify-center'
           } rounded-lg`}
         >
           <RiHome5Line className="text-xl" />
           <p className={`${sideBar && 'hidden'}`}>Home</p>
-        </div>
-        <div
+        </NavLink>
+        <NavLink
+          onClick={() => setSideBar(true)}
+          to="game-guide"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 py-2 ${
             !sideBar ? 'px-3' : 'justify-center'
           } rounded-lg`}
         >
           <AiOutlineAppstore className="text-xl" />
           <p className={`${sideBar && 'hidden'}`}>Oyun Rehberi</p>
-        </div>
-        <div
+        </NavLink>
+        <NavLink
+          onClick={() => setSideBar(true)}
+          to="crosshair"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 py-2 ${
             !sideBar ? 'px-3' : 'justify-center'
           } rounded-lg`}
         >
           <HiOutlineUsers className="text-xl" />
           <p className={`${sideBar && 'hidden'}`}>Crosshair</p>
-        </div>
-        <div
+        </NavLink>
+        <NavLink
+          onClick={() => setSideBar(true)}
+          to="comps"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 py-2 ${
             !sideBar ? 'px-3' : 'justify-center'
           } rounded-lg`}
         >
           <HiOutlineBookOpen className="text-xl" />
           <p className={`${sideBar && 'hidden'}`}>Comps</p>
-        </div>
-        <div
+        </NavLink>
+        <NavLink
+          onClick={() => setSideBar(true)}
+          to="coaching-service"
           className={`flex gap-4 items-center cursor-pointer hover:bg-gray-800 active:bg-gray-600 py-2 ${
             !sideBar ? 'px-3' : 'justify-center'
           } rounded-lg`}
         >
           <FiFolder className="text-xl" />
           <p className={`${sideBar && 'hidden'}`}>Koçluk Hizmeti</p>
-        </div>
+        </NavLink>
       </main>
       <hr className="mt-9 mx-auto border-gray-500" />
       <article></article>

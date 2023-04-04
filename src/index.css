@@ -11,7 +11,7 @@
 *::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-  scrollbar-color: red;
+  scrollbar-color: black;
 }
 
 *::-webkit-scrollbar-track {
@@ -21,6 +21,14 @@
 *::-webkit-scrollbar-thumb {
   background-color: #252525;
   border-radius: 14px;
+}
+
+@media (max-width: 640px) {
+  *::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    scrollbar-color: black;
+  }
 }
 @tailwind components;
 @tailwind utilities;
