@@ -7,7 +7,7 @@ const Search = () => {
     <div className="flex justify-end gap-4 md:gap-110 items-center h-14 bg-wagmi-midblack">
       <div className="relative">
         <input
-          className="h-8 w-48 sm:w-80 p-2 rounded-md text-sm text-white text-opacity-50 bg-white bg-opacity-10 outline-none"
+          className="h-8 w-40 sm:w-80 p-2 rounded-md text-sm text-white text-opacity-50 bg-white bg-opacity-10 outline-none"
           placeholder="Search..."
           type="text"
         />
