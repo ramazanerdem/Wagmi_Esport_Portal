@@ -30,7 +30,7 @@ const Char = () => {
       </header>
       <main className="w-10/12 mx-auto">
         <div className="flex justify-start">
-          <div className="flex flex-col md:flex-row gap-5 -mt-56 md:-mt-16">
+          <div className="flex flex-col items-center md:items-start md:flex-row gap-5 -mt-56 md:-mt-16">
             <div className="relative z-10 w-80 h-80 rounded-2xl overflow-hidden shadow-black shadow-2xl">
               <div className="absolute w-80 h-80 rounded-2xl bg-gradient-to-b from-red-400 via-gray-900 to-blue-300 blur-2xl"></div>
               <img

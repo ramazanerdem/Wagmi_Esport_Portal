@@ -91,7 +91,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
       </main>
       <hr className="mt-9 mx-auto border-gray-500" />
       <div className="relative min-h-screen">
-        <article
+        {/* <article
           className={`${
             sideBar && 'hidden'
           } hidden md:flex md:flex-col p-5 bg-white bg-opacity-10 rounded-xl absolute bottom-96 space-y-2 mx-2`}
@@ -109,7 +109,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
           <button className="bg-wagmi-yellow text-wagmi-black p-1 rounded-md">
             Feed Back
           </button>
-        </article>
+        </article> */}
       </div>
     </div>
   )
