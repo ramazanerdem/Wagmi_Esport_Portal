@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import { AiFillSignal } from 'react-icons/ai'
 import { GiAndroidMask, GiPistolGun } from 'react-icons/gi'
@@ -79,7 +79,9 @@ const GameGuide = () => {
           <div className="px-7 py-6 rounded-xl flex flex-col justify-between bg-white bg-opacity-5 hover:bg-opacity-10 h-44 w-60">
             <GiPistolGun className="text-3xl" />
             <div>
-              <h4 className="font-bold mb-3">Statistic</h4>
+              <NavLink to="weapons">
+                <div className="font-bold mb-3">Weapons</div>
+              </NavLink>
               <p className="text-xs font-normal text-white text-opacity-30">
                 See stats for every weapon in the game.
               </p>

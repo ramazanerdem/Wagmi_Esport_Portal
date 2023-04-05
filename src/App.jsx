@@ -24,6 +24,7 @@ import GameGuide from './pages/GameGuide'
 import RootScreen from './pages/RootScreen'
 import Char from './pages/Char'
 import Characters from './pages/Characters'
+import Weapons from './pages/Weapons'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="game-guide" element={<GameGuideLayout />}>
           <Route index element={<GameGuide />} />
+          <Route path="weapons" element={<Weapons />} />
           <Route path="characters" element={<CharactersLayout />}>
             <Route index element={<Characters />} />
             <Route path="char-1" element={<Char />} />

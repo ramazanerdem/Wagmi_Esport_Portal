@@ -5,7 +5,11 @@ import valo from '../image/valo1.jpg'
 const RootScreen = () => {
   return (
     <section className="relative overflow-hidden bg-wagmi-black bg-opacity-80 text-white min-h-screen flex flex-col items-center pt-20">
-      <img src={valo} alt="" className="absolute top-0 -z-10" />
+      <img
+        src={valo}
+        alt=""
+        className="absolute top-0 -z-10 h-full w-full object-cover"
+      />
       <div className="bg-gradient-radial from-black via-transparent to-transparent w-68 h-68 flex justify-center items-center rounded-full animate-pulse">
         <img className="w-16" src={logo} alt="" />
       </div>
