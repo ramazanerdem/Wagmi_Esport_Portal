@@ -18,7 +18,7 @@ const Weapons = () => {
   return (
     <section className="w-9/12">
       <h4 className="text-2xl font-semibold my-7">Weapons</h4>
-      <article className="grid grid-cols-3 gap-7 mb-10">
+      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mb-10">
         <div>
           <div className="relative h-44 group rounded-xl overflow-hidden">
             <div className="h-44 bg-gradient-to-r from-slate-900 via-blue-400 to-red-400 blur-xl opacity-60 group-hover:opacity-80 transition-all duration-500"></div>

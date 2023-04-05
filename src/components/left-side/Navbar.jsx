@@ -94,7 +94,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
         <article
           className={`${
             sideBar && 'hidden'
-          } flex flex-col p-5 bg-white bg-opacity-10 rounded-xl absolute bottom-96 space-y-2 mx-2`}
+          } hidden md:flex md:flex-col p-5 bg-white bg-opacity-10 rounded-xl absolute bottom-96 space-y-2 mx-2`}
         >
           <div className="flex justify-between items-center">
             <p className="font-semibold text-white text-opacity-70">
