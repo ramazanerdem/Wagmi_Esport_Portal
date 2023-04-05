@@ -13,7 +13,7 @@ const RootScreen = () => {
       <div className="bg-gradient-radial from-black via-transparent to-transparent w-68 h-68 flex justify-center items-center rounded-full animate-pulse">
         <img className="w-16" src={logo} alt="" />
       </div>
-      <p className="text-5xl font-bold mb-10 w-2/6 text-center leading-tight">
+      <p className="text-3xl md:text-5xl font-bold mb-10 w-2/6 text-center leading-tight">
         Welcome to <span className="text-wagmi-yellow">Wagmi</span> Game Portal
       </p>
       <div className="flex gap-10 font-semibold">
