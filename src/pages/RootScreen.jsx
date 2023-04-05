@@ -18,12 +18,12 @@ const RootScreen = () => {
       </p>
       <div className="flex gap-10 font-semibold">
         <NavLink to="home">
-          <button className="bg-wagmi-yellow text-wagmi-black hover:bg-wagmi-black hover:text-wagmi-yellow w-24 h-8 rounded-md shadow-black shadow-3xl">
+          <button className="bg-wagmi-yellow text-wagmi-black hover:bg-wagmi-black hover:text-wagmi-yellow w-24 h-8 rounded-md shadow-black shadow-3xl transition-all duration-300">
             Open Site
           </button>
         </NavLink>
         <a href="https://wagmi-login-page.netlify.app/">
-          <button className="bg-wagmi-yellow hover:bg-wagmi-black hover:text-wagmi-yellow text-wagmi-black w-24 h-8 rounded-md shadow-black shadow-3xl">
+          <button className="bg-wagmi-yellow hover:bg-wagmi-black hover:text-wagmi-yellow text-wagmi-black w-24 h-8 rounded-md shadow-black shadow-3xl transition-all duration-300">
             Login
           </button>
         </a>
