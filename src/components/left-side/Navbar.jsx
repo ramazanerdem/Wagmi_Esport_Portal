@@ -94,7 +94,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
         <article
           className={`${
             sideBar && 'hidden'
-          } flex flex-col p-5 bg-white bg-opacity-10 rounded-xl absolute bottom-96 space-y-2`}
+          } flex flex-col p-5 bg-white bg-opacity-10 rounded-xl absolute bottom-96 space-y-2 mx-2`}
         >
           <div className="flex justify-between items-center">
             <p className="font-semibold text-white text-opacity-70">
@@ -104,7 +104,7 @@ const Navbar = ({ sideBar, setSideBar }) => {
           </div>
           <p className="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
           <div className="mx-auto">
-            <img className="my-2" src={teamsLogo} alt="" />
+            <img className="scale-75" src={teamsLogo} alt="" />
           </div>
           <button className="bg-wagmi-yellow text-wagmi-black p-1 rounded-md">
             Feed Back

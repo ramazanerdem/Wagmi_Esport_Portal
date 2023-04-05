@@ -19,6 +19,7 @@ import breach from '../image/characters/Artwork (16).png'
 import astra from '../image/characters/Artwork (17).png'
 
 import ticked from '../image/CardTicked.png'
+import { NavLink } from 'react-router-dom'
 
 const Characters = () => {
   return (
@@ -28,15 +29,17 @@ const Characters = () => {
           Characters
         </h4>
         <div className=" w-52 mb-5 overflow-hidden rounded-t-xl">
-          <div className="relative w-52 h-68 bg-gradient-to-t from-slate-500 via-wagmi-card to-slate-700 overflow-hidden rounded-xl">
-            <img
-              className="absolute right-2 top-2 scale-75"
-              src={ticked}
-              alt=""
-            />
-            <img className="translate-y-5 -translate-x-1" src={sage} alt="" />
-          </div>
-          <p className="mt-1">Sage</p>
+          <NavLink to="char-1">
+            <div className="relative w-52 h-68 bg-gradient-to-t from-slate-500 via-wagmi-card to-slate-700 overflow-hidden rounded-xl">
+              <img
+                className="absolute right-2 top-2 scale-75"
+                src={ticked}
+                alt=""
+              />
+              <img className="translate-y-5 -translate-x-1" src={jett} alt="" />
+            </div>
+          </NavLink>
+          <p className="mt-1">Jett</p>
         </div>
         <div className="w-52 mb-5 overflow-hidden rounded-t-xl">
           <div className="relative w-52 h-68 bg-gradient-to-t from-slate-500 via-wagmi-card to-slate-700 overflow-hidden rounded-xl">
@@ -178,9 +181,9 @@ const Characters = () => {
               src={ticked}
               alt=""
             />
-            <img className="translate-y-5 -translate-x-1" src={jett} alt="" />
+            <img className="translate-y-5 -translate-x-1" src={sage} alt="" />
           </div>
-          <p className="mt-1">Jett</p>
+          <p className="mt-1">Sage</p>
         </div>
         <div className="w-52 mb-5 overflow-hidden rounded-t-xl">
           <div className="relative w-52 h-68 bg-gradient-to-t from-slate-500 via-wagmi-card to-slate-700 overflow-hidden rounded-xl">
