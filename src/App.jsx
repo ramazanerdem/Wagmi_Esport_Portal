@@ -4,39 +4,48 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom'
-import { useState } from 'react'
 
 // component
 
 // layout
+import AppLayout from './layouts/AppLayout'
+import GameGuideLayout from './layouts/GameGuideLayout'
+import LoginLayout from './layouts/LoginLayout'
 import RootLayout from './layouts/RootLayout'
-import GameGuideLayout from './pages/GameGuideLayout'
+import CharactersLayout from './layouts/CharactersLayout'
 
 // pages
 import Home from './pages/Home'
 import Comps from './pages/Comps'
-import Login from './pages/Login'
-import Characters from './pages/Characters'
 import Crosshair from './pages/Crosshair'
 import CoachingServices from './pages/CoachingServices'
 import NotFound from './pages/NotFound'
 import GameGuide from './pages/GameGuide'
+import RootScreen from './pages/RootScreen'
+import Char from './pages/Char'
+import Characters from './pages/Characters'
+import Weapons from './pages/Weapons'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route path="login" element={<Login />} />
-      <Route path="/" element={<Home />}>
-        <Route path="home" element={<Home />} />
+      <Route index element={<RootScreen />} />
+      <Route path="login" element={<LoginLayout />} />
+      <Route path="home" element={<AppLayout />}>
+        <Route index element={<Home />} />
+        <Route path="game-guide" element={<GameGuideLayout />}>
+          <Route index element={<GameGuide />} />
+          <Route path="weapons" element={<Weapons />} />
+          <Route path="characters" element={<CharactersLayout />}>
+            <Route index element={<Characters />} />
+            <Route path="char-1" element={<Char />} />
+          </Route>
+        </Route>
+        <Route path="crosshair" element={<Crosshair />} />
+        <Route path="comps" element={<Comps />} />
+        <Route path="coaching-service" element={<CoachingServices />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
-      <Route path="game-guide" element={<GameGuideLayout />}>
-        <Route index element={<GameGuide />} />
-        <Route path="characters" element={<Characters />} />
-      </Route>
-      <Route path="crosshair" element={<Crosshair />} />
-      <Route path="comps" element={<Comps />} />
-      <Route path="coaching-service" element={<CoachingServices />} />
-      <Route path="*" element={<NotFound />} />
     </Route>
   )
 )

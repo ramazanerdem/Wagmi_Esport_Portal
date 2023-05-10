@@ -12,6 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         img1: "url('./src/image/valo1.jpg')",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       fontSize: {
         '2xs': '0.55rem',
@@ -23,6 +24,9 @@ module.exports = {
         128: '32rem',
         156: '40rem',
         200: '55rem',
+      },
+      boxShadow: {
+        '3xl': '0px 0px 20px 2px rgba(0, 0, 0, 0.3)',
       },
     },
   },
